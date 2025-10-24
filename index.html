@@ -1,52 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Marcado Talento</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Talento Tech</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
         <nav class="nav">
-          <div style="display: flex; align-items: center; gap: 32px">
+          <div class="nav-row">
             <a class="brand" href="#">
-              <!-- Logo simple en SVG -->
-              <svg
-                class="brand-logo"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2 2 7l10 5 10-5-10-5Zm-10 15 10 5 10-5-10-5-10 5Zm10-3.53-8-4L12 6.53l8 4-8 3.94Z"
-                />
-              </svg>
-              <span>MarketHub</span>
+              <!-- Logo simple -->
+              <img class="brand-logo" src="./img/image_logo.png" alt="logo">
             </a>
             <div class="nav-links">
-              <a class="nav-link" href="#">Home</a>
-              <a class="nav-link" href="#">Categories</a>
-              <a class="nav-link" href="#">Sell</a>
-              <a class="nav-link" href="#">Help</a>
+              <a class="nav-link" href="#">Inicio</a>
+              <a class="nav-link" href="#">Categorías</a>
+              <a class="nav-link" href="#">Vender</a>
+              <a class="nav-link" href="#">Ayuda</a>
             </div>
           </div>
 
           <div class="actions">
             <div class="search">
               <span class="search-icon">🔎</span>
-              <input type="text" placeholder="Busqueda" />
+              <input type="text" placeholder="Búsqueda" />
             </div>
-            <button class="icon-btn" aria-label="Favorites">❤</button>
-            <button class="icon-btn" aria-label="Cart">🛒</button>
+            <button class="icon-btn" aria-label="Favoritos">❤</button>
+            <button class="icon-btn" aria-label="Carrito">🛒</button>
             <div
               class="avatar"
-              style="
-                background-image: url('https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=200&auto=format&fit=crop');
-              "
-            ></div>
+            >
+            <img src="./img/icon_user.png" alt="icon_user">
+          </div>
           </div>
         </nav>
       </div>
@@ -64,26 +52,26 @@
               background-position: center;
             "
           >
-            <h1>Discover Unique Finds</h1>
+            <h1>Descubri cosas increíbles</h1>
           </div>
         </section>
 
         <!-- CATEGORÍAS -->
         <section class="mb-12">
-          <h2 class="section-title">Featured Categories</h2>
+          <h2 class="section-title">Categorías destacadas</h2>
           <div class="chips">
-            <a href="#" class="chip">Home Decor</a>
-            <a href="#" class="chip">Electronics</a>
-            <a href="#" class="chip">Fashion</a>
-            <a href="#" class="chip">Books</a>
-            <a href="#" class="chip">Sports</a>
-            <a href="#" class="chip">Toys</a>
+            <a href="#" class="chip">Decoración Hogar</a>
+            <a href="#" class="chip">Electrónica</a>
+            <a href="#" class="chip">Moda</a>
+            <a href="#" class="chip">Libros</a>
+            <a href="#" class="chip">Deportes</a>
+            <a href="#" class="chip">Juguetes</a>
           </div>
         </section>
 
         <!-- PRODUCTOS -->
         <section>
-          <h2 class="section-title">New Arrivals</h2>
+          <h2 class="section-title">Novedades</h2>
           <div class="grid">
             <!-- Card 1 -->
             <a class="card" href="#">
@@ -95,7 +83,7 @@
                   "
                 ></div>
               </div>
-              <h3>Vintage Desk Lamp</h3>
+              <h3>Lámpara de escritorio vintage</h3>
               <p>$45</p>
             </a>
             <!-- Card 2 -->
@@ -108,7 +96,7 @@
                   "
                 ></div>
               </div>
-              <h3>Wireless Headphones</h3>
+              <h3>Auriculares inalámbricos</h3>
               <p>$89</p>
             </a>
             <!-- Card 3 -->
@@ -121,7 +109,7 @@
                   "
                 ></div>
               </div>
-              <h3>Leather Backpack</h3>
+              <h3>Mochila de cuero</h3>
               <p>$120</p>
             </a>
             <!-- Card 4 -->
@@ -134,7 +122,7 @@
                   "
                 ></div>
               </div>
-              <h3>Mystery Novel</h3>
+              <h3>Novela de misterio</h3>
               <p>$15</p>
             </a>
             <!-- Card 1 -->
@@ -147,7 +135,7 @@
                   "
                 ></div>
               </div>
-              <h3>Vintage Desk Lamp</h3>
+              <h3>Lámpara de escritorio vintage</h3>
               <p>$45</p>
             </a>
             <!-- Card 2 -->
@@ -160,7 +148,7 @@
                   "
                 ></div>
               </div>
-              <h3>Wireless Headphones</h3>
+              <h3>Auriculares inalámbricos</h3>
               <p>$89</p>
             </a>
             <!-- Card 3 -->
@@ -173,7 +161,7 @@
                   "
                 ></div>
               </div>
-              <h3>Leather Backpack</h3>
+              <h3>Mochila de cuero</h3>
               <p>$120</p>
             </a>
             <!-- Card 4 -->
@@ -186,7 +174,7 @@
                   "
                 ></div>
               </div>
-              <h3>Mystery Novel</h3>
+              <h3>Novela de misterio</h3>
               <p>$15</p>
             </a>
             <!-- Card 1 -->
@@ -199,7 +187,7 @@
                   "
                 ></div>
               </div>
-              <h3>Vintage Desk Lamp</h3>
+              <h3>Lámpara de escritorio vintage</h3>
               <p>$45</p>
             </a>
             <!-- Card 2 -->
@@ -212,7 +200,7 @@
                   "
                 ></div>
               </div>
-              <h3>Wireless Headphones</h3>
+              <h3>Auriculares inalámbricos</h3>
               <p>$89</p>
             </a>
             <!-- Card 3 -->
@@ -225,7 +213,7 @@
                   "
                 ></div>
               </div>
-              <h3>Leather Backpack</h3>
+              <h3>Mochila de cuero</h3>
               <p>$120</p>
             </a>
             <!-- Card 4 -->
@@ -238,14 +226,14 @@
                   "
                 ></div>
               </div>
-              <h3>Mystery Novel</h3>
+              <h3>Novela de misterio</h3>
               <p>$15</p>
             </a>
           </div>
 
           <div class="btn-row mt-8">
-            <button class="btn btn-primary">View All</button>
-            <button class="btn btn-ghost">Sell Your Item</button>
+            <button class="btn btn-primary">Ver todo</button>
+            <button class="btn btn-ghost">Vende tu producto</button>
           </div>
         </section>
       </div>
@@ -256,12 +244,14 @@
       <div class="container">
         <div class="footer-inner">
           <div class="footer-links">
-            <a class="footer-link" href="#">About</a>
-            <a class="footer-link" href="#">Contact</a>
-            <a class="footer-link" href="#">Terms of Service</a>
-            <a class="footer-link" href="#">Privacy Policy</a>
+            <a class="footer-link" href="about.html" target="_blank">Acerca de</a>
+            <a class="footer-link" href="contact.html"  target="_blank">Contacto</a>
+            <a class="footer-link" href="terms.html" target="_blank">Términos del servicio</a>
+            <a class="footer-link" href="privacy_policy.html" target="_blank">Política de privacidad</a>
           </div>
-          <p class="copyright">© 2024 MarketHub. All rights reserved.</p>
+          <p class="copyright">
+            © TalentoTech 2025. Todos los derechos reservados.
+          </p>
         </div>
       </div>
     </footer>

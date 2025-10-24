@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* ======= Variables de color y tipografía ======= */
 :root {
   --primary: #1173d4;
@@ -12,7 +14,7 @@
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 6px 20px rgba(16, 25, 34, 0.1);
   --transition: 200ms ease; /* transicion de 200 milisegundos, función de tiempo ease para un movimiento suave */
-  --font: Inter, Arial, sans-serif;
+  --font: "Roboto", sans-serif;
 }
 
 /* ======= Base ======= */
@@ -69,6 +71,12 @@ button {
   justify-content: space-between;
 }
 
+.nav-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -77,8 +85,8 @@ button {
   font-size: 18px;
 }
 .brand-logo {
-  width: 24px;
-  height: 24px;
+  width: 94px;
+  height: auto;
   color: var(--primary);
 }
 
@@ -127,7 +135,7 @@ button {
 }
 .search input:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(17,115,212,0.2);
+  box-shadow: 0 0 0 3px rgba(17, 115, 212, 0.2);
 }
 .search-icon {
   position: absolute;
@@ -156,8 +164,8 @@ button {
     border var(--transition);
 }
 .icon-btn:hover {
-  background: rgba(17,115,212,0.1);
-  border-color: rgba(17,115,212,0.4);
+  background: rgba(17, 115, 212, 0.1);
+  border-color: rgba(17, 115, 212, 0.4);
 }
 
 .avatar {
@@ -180,20 +188,21 @@ button {
   box-shadow: var(--shadow-md);
 }
 .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.55) 0%,
-    rgba(0, 0, 0, 0) 45%
-  );
-}
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+
 .hero h1 {
   position: relative;
+  z-index: 1;
   color: #fff;
   padding: 24px;
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: 36px;
   margin: 0;
 }
 
@@ -218,8 +227,8 @@ button {
     color var(--transition);
 }
 .chip:hover {
-  background: rgba(17,115,212,0.1);
-  border-color: rgba(17,115,212,0.3);
+  background: rgba(17, 115, 212, 0.1);
+  border-color: rgba(17, 115, 212, 0.3);
   color: var(--text);
 }
 
@@ -317,8 +326,8 @@ button {
   border-color: 1px solid var(--border);
 }
 .btn-ghost:hover {
-  background: rgba(17,115,212,0.1);
-  border-color: rgba(17,115,212,0.3);
+  background: rgba(17, 115, 212, 0.1);
+  border-color: rgba(17, 115, 212, 0.3);
 }
 
 /* ======= Secciones ======= */
