@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Talento Tech</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/samsungone" rel="stylesheet" />
+
+    <!--arreglar barra con este codigo-css  -->
   </head>
   <body>
     <header class="site-header">
       <div class="container">
         <nav class="nav">
           <div class="nav-row">
-            <a class="brand" href="#">
+            <a class="brand" href="./index.html">
               <!-- Logo simple -->
-              <img class="brand-logo" src="./img/image_logo.png" alt="logo" />
+              <img class="brand-logo" src="./img/Logo_2.svg" alt="logo" />
             </a>
             <div class="nav-links">
               <a class="nav-link" href="#">Inicio</a>
@@ -29,7 +39,9 @@
               <input type="text" placeholder="Búsqueda" />
             </div>
             <button class="icon-btn" aria-label="Favoritos">❤</button>
-            <button class="icon-btn" aria-label="Carrito">🛒</button>
+            <a href="./cart.html"
+              ><button class="icon-btn" aria-label="Carrito">🛒</button></a
+            >
             <div class="avatar">
               <img src="./img/icon_user.png" alt="icon_user" />
             </div>
@@ -45,11 +57,12 @@
           <div
             class="hero"
             style="
-              background-image: url('https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1600&auto=format&fit=crop');
+              background-image: url('https://images.pexels.com/photos/31507731/pexels-photo-31507731.jpeg');
               background-size: cover;
               background-position: center;
             "
           >
+            <!-- Foto de Tiến Dũng: https://www.pexels.com/es-es/foto/31507731/ -->
             <h1>Descubri cosas increíbles</h1>
           </div>
         </section>
@@ -67,11 +80,10 @@
           </div>
         </section>
 
-        <!-- PRODUCTOS -->
+        <!-- novedades  -->
         <section>
           <h2 class="section-title">Novedades</h2>
-          <div class="grid">
-            <!-- Card 1 -->
+          <div class="grid" id="">
             <a class="card" href="#">
               <div class="card-media">
                 <div class="cover">
@@ -79,9 +91,9 @@
                 </div>
               </div>
               <h3>Lámpara de escritorio</h3>
-              <p>$45</p>
+              <p></p>
             </a>
-            <!-- Card 2 -->
+
             <a class="card" href="#">
               <div class="card-media">
                 <div class="cover">
@@ -89,9 +101,9 @@
                 </div>
               </div>
               <h3>Auriculares inalámbricos</h3>
-              <p>$89</p>
+              <p></p>
             </a>
-            <!-- Card 3 -->
+
             <a class="card" href="#">
               <div class="card-media">
                 <div class="cover">
@@ -99,9 +111,9 @@
                 </div>
               </div>
               <h3>Mochila de cuero</h3>
-              <p>$120</p>
+              <p></p>
             </a>
-            <!-- Card 4 -->
+
             <a class="card" href="#">
               <div class="card-media">
                 <div class="cover">
@@ -109,9 +121,9 @@
                 </div>
               </div>
               <h3>Novelas</h3>
-              <p>$15</p>
+              <p></p>
             </a>
-            <!-- Card 5 -->
+
             <a class="card" href="#">
               <div class="card-media">
                 <div class="cover">
@@ -119,9 +131,9 @@
                 </div>
               </div>
               <h3>Sofa moderno</h3>
-              <p>$45</p>
+              <p></p>
             </a>
-            <!-- Card 6 -->
+
             <a class="card" href="#">
               <div class="card-media">
                 <div class="cover">
@@ -129,9 +141,9 @@
                 </div>
               </div>
               <h3>Moda de verano</h3>
-              <p>$89</p>
+              <p></p>
             </a>
-            <!-- Card 7 -->
+
             <a class="card" href="#">
               <div class="card-media">
                 <div class="cover">
@@ -139,9 +151,9 @@
                 </div>
               </div>
               <h3>Yoga mat</h3>
-              <p>$120</p>
+              <p></p>
             </a>
-            <!-- Card 8 -->
+
             <a class="card" href="#">
               <div class="card-media">
                 <div class="cover">
@@ -149,9 +161,9 @@
                 </div>
               </div>
               <h3>Plantas de interior</h3>
-              <p>$15</p>
+              <p></p>
             </a>
-            <!-- Card 9 -->
+
             <a class="card" href="#">
               <div class="card-media">
                 <div class="cover">
@@ -159,9 +171,9 @@
                 </div>
               </div>
               <h3>Relojes</h3>
-              <p>$45</p>
+              <p></p>
             </a>
-            <!-- Card 10 -->
+
             <a class="card" href="#">
               <div class="card-media">
                 <div class="cover">
@@ -169,9 +181,9 @@
                 </div>
               </div>
               <h3>Teclados gamer</h3>
-              <p>$89</p>
+              <p></p>
             </a>
-            <!-- Card 11 -->
+
             <a class="card" href="#">
               <div class="card-media">
                 <div class="cover">
@@ -179,9 +191,9 @@
                 </div>
               </div>
               <h3>Anteojos de sol</h3>
-              <p>$120</p>
+              <p></p>
             </a>
-            <!-- Card 12 -->
+
             <a class="card" href="#">
               <div class="card-media">
                 <div class="cover">
@@ -189,9 +201,69 @@
                 </div>
               </div>
               <h3>Decoración</h3>
-              <p>$15</p>
+              <p></p>
             </a>
           </div>
+        </section>
+
+        <!-- HERO -->
+        <section class="mb-12">
+          <div
+            onclick="location.href='https://shop.samsung.com/ar/dispositivos-moviles/?order='"
+            class="hero"
+            style="
+              background: url('https://static.elisa.com/v2/image/2tqybbhjs47b/V6VHPe4ll6EZjf6iOQBrB/Hero-Sample2-Dark-Desktop.jpg');
+              background-size: cover;
+              background-position: center center;
+              max-width: 100%;
+              cursor: pointer;
+            "
+          >
+            <div
+              style="
+                padding: 90px 15px;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+              "
+            >
+              <h2
+                style="
+                  font-family: 'Samsung Sharp Sans ', sans-serif;
+                  font-weight: 700;
+                  color: white;
+                  font-size: 14px;
+                  margin: 0;
+                  padding-bottom: 10px;
+                "
+              >
+                SAMSUNG
+              </h2>
+              <p
+                style="
+                  font-family: 'DM Sans', sans-serif;
+                  color: white;
+                  font-size: 38px;
+                  font-weight: 400;
+                  margin: 0;
+                "
+              >
+                Galaxy S20 Ultra 5G <br />
+                Super Hyper
+              </p>
+              <div class="btn-row mt-8" style="width: fit-content">
+                <button class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <br />
+
+        <!-- PRODUCTOS  -->
+        <section>
+          <h2 class="section-title">Deacuerdo a tus intereses</h2>
+          <div class="grid" id="product-list"></div>
 
           <div class="btn-row mt-8">
             <button class="btn btn-primary">Ver todo</button>
@@ -225,5 +297,130 @@
         </div>
       </div>
     </footer>
+    <script src="./js/api.js"></script>
   </body>
 </html>
+
+<!-- 12 productos para usar sin api.js -->
+
+<!--
+            <a class="card" href="#">
+              <div class="card-media">
+                <div class="cover">
+                  <img src="./img/lampara.png" alt="" />
+                </div>
+              </div>
+              <h3>Lámpara de escritorio</h3>
+              <p>$45</p>
+            </a>
+            
+            <a class="card" href="#">
+              <div class="card-media">
+                <div class="cover">
+                  <img src="./img/auriculares.png" alt="" />
+                </div>
+              </div>
+              <h3>Auriculares inalámbricos</h3>
+              <p>$89</p>
+            </a>
+            
+            <a class="card" href="#">
+              <div class="card-media">
+                <div class="cover">
+                  <img src="./img/mochila.png" alt="" />
+                </div>
+              </div>
+              <h3>Mochila de cuero</h3>
+              <p>$120</p>
+            </a>
+            
+            <a class="card" href="#">
+              <div class="card-media">
+                <div class="cover">
+                  <img src="./img/libro.png" alt="" />
+                </div>
+              </div>
+              <h3>Novelas</h3>
+              <p>$15</p>
+            </a>
+            
+            <a class="card" href="#">
+              <div class="card-media">
+                <div class="cover">
+                  <img src="./img/sofa.png" alt="" />
+                </div>
+              </div>
+              <h3>Sofa moderno</h3>
+              <p>$45</p>
+            </a>
+            
+            <a class="card" href="#">
+              <div class="card-media">
+                <div class="cover">
+                  <img src="./img/vestido.png" alt="" />
+                </div>
+              </div>
+              <h3>Moda de verano</h3>
+              <p>$89</p>
+            </a>
+            
+            <a class="card" href="#">
+              <div class="card-media">
+                <div class="cover">
+                  <img src="./img/yoga.png" alt="" />
+                </div>
+              </div>
+              <h3>Yoga mat</h3>
+              <p>$120</p>
+            </a>
+            
+            <a class="card" href="#">
+              <div class="card-media">
+                <div class="cover">
+                  <img src="./img/planta_interior.png" alt="" />
+                </div>
+              </div>
+              <h3>Plantas de interior</h3>
+              <p>$15</p>
+            </a>
+            
+            <a class="card" href="#">
+              <div class="card-media">
+                <div class="cover">
+                  <img src="./img/reloj.png" alt="" />
+                </div>
+              </div>
+              <h3>Relojes</h3>
+              <p>$45</p>
+            </a>
+            
+            <a class="card" href="#">
+              <div class="card-media">
+                <div class="cover">
+                  <img src="./img/teclado.png" alt="" />
+                </div>
+              </div>
+              <h3>Teclados gamer</h3>
+              <p>$89</p>
+            </a>
+            
+            <a class="card" href="#">
+              <div class="card-media">
+                <div class="cover">
+                  <img src="./img/anteojos.png" alt="" />
+                </div>
+              </div>
+              <h3>Anteojos de sol</h3>
+              <p>$120</p>
+            </a>
+           
+            <a class="card" href="#">
+              <div class="card-media">
+                <div class="cover">
+                  <img src="./img/decoracion.png" alt="" />
+                </div>
+              </div>
+              <h3>Decoración</h3>
+              <p>$15</p>
+            </a> 
+            -->
