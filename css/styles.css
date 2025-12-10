@@ -4,6 +4,7 @@
 :root {
   --primary: #1173d4;
   --bg: #f6f7f8;
+  --color-acento: #ee6130;
   --surface: #ffffff;
   --text: #0d141b;
   --text-muted: #4c739a;
@@ -47,6 +48,20 @@ button {
   font: inherit;
 }
 
+#cuenta-carrito {
+  position: absolute;
+  background-color: var(--color-acento);
+  border-radius: 100%;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  aspect-ratio: 1;
+  text-align: center;
+  margin-right: -26px;
+  margin-bottom: -26px;
+  /* margin-bottom: 15px; */
+}
+
 .container {
   width: 100%;
   max-width: var(--container);
@@ -56,12 +71,16 @@ button {
 
 /* ======= Header ======= */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
-  background: rgb(255, 255, 255);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid;
+  background-color: #333333;
+  right: 0;
+  left: 0;
+  min-height: 64px;
+  height: 64px;
 }
 
 .nav {
@@ -333,6 +352,7 @@ button {
 /* ======= Secciones ======= */
 main {
   flex: 1;
+  margin-top: 84px;
 }
 section {
   margin-bottom: 48px;
@@ -343,6 +363,15 @@ section {
   margin: 0 0 18px;
 }
 
+.add {
+  position: relative;
+  border-radius: 16px;
+  min-height: 360px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
 /* ======= Footer ======= */
 footer {
   border-top: 1px solid var(--border);

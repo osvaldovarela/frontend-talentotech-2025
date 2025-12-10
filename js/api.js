@@ -20,8 +20,8 @@ function printProducts(products) {
     const card = document.createElement("a");
     // añade la clase "card" al elemento <a> para aplicar estilos CSS
     card.classList.add("card");
-    // establece el atributo href (href="#" por defecto)
-    card.href = "#";
+    // establece el atributo href con el ID del producto
+    card.href = `description.html?id=${product.id}`; // usa el ID del producto
 
     // inserta el HTML interno de la tarjeta con la estructura solicitada
     card.innerHTML = `
@@ -45,5 +45,16 @@ function printProducts(products) {
     productList.appendChild(card);
   });
 }
+
+// Seleccionar todas las imágenes dentro de elementos <figure>
+const cards = document.querySelectorAll("#product-list .card");
+// Agregar un listener de eventos a cada tarjeta
+cards.forEach((card, index) => {
+  card.addEventListener("click", function (e) {
+    e.preventDefault();
+    const productId = index + 1; // o usa el id del producto si está disponible
+    window.location.href = `description.html?id=${productId}`;
+  });
+});
 
 loadProduct();
